@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chocolatey on 找个时间</title>
+    <link>https://beeky86.github.io/tags/chocolatey/</link>
+    <description>Recent content in chocolatey on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/chocolatey/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>chocolatey</title>
+      <link>https://beeky86.github.io/post/chocolatey/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/chocolatey/</guid>
+      <description>Chocolatey-windows 下强大的软件包管理工具 软件的精髓就是看它版本号不断更新 在 Linux 下，大家喜欢用 apt-get 来安装应用程序，如今在 windows 下，大家可以使用 Chocolatey 来快速下载搭建一个开发环境。 Chocolatey 的哲学就是完全用命令行来安装应用程序， 它更像一个包管理工具（背后使用 Nuget ） 另外需要说明的是， Chocolatey 只是把官方下载路径封装到了 Chocolatey 中，所以下载</description>
+    </item>
+    
+  </channel>
+</rss>

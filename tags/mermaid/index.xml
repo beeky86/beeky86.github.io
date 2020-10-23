@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mermaid on 找个时间</title>
+    <link>https://beeky86.github.io/tags/mermaid/</link>
+    <description>Recent content in mermaid on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/mermaid/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>markdown_流程图绘制_mermaid</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</guid>
+      <description>mermaid gantt gantt title 甘特图示例一 section 迭代一 任务一 :a1, 2014-01-01, 30d 任务二 :after a1 , 20d section 迭代二 任务三 :2014-01-12 , 12d 任务四 : 24d</description>
+    </item>
+    
+  </channel>
+</rss>

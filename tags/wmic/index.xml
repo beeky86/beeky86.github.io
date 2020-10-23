@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wmic on 找个时间</title>
+    <link>https://beeky86.github.io/tags/wmic/</link>
+    <description>Recent content in wmic on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/wmic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>wmic-改计算机名</title>
+      <link>https://beeky86.github.io/post/wmic-%E6%94%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/wmic-%E6%94%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 @echo off setlocal enabledelayedexpansion rem ====================提权====================== cd /d &amp;#34;%~dp0&amp;#34; cacls.exe &amp;#34;%SystemDrive%\System Volume Information&amp;#34; &amp;gt;nul 2&amp;gt;nul if %errorlevel%==0 goto Admin if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; echo Set RequestUAC = CreateObject^(&amp;#34;Shell.Application&amp;#34;^)&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo RequestUAC.ShellExecute &amp;#34;%~s0&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1 &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo WScript.Quit &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; &amp;#34;%temp%\getadmin.vbs&amp;#34; /f if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; exit :Admin rem ====================提权=</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wol on 找个时间</title>
+    <link>https://beeky86.github.io/tags/wol/</link>
+    <description>Recent content in wol on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/wol/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>远程唤醒电脑</title>
+      <link>https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/</guid>
+      <description>远程唤醒电脑 基于有线网络连接下的环境。 内网唤醒 准备工作 主板 主板需要支持 WOL网络唤醒功能。 进入主板设置，查找wake on lan、resume on lan、power on PME、power on by PCI-E device、Power on by Onboard LAN 等选项，将其设为Enabled。 网卡 在网卡驱动里开启 WOL 相关选项。</description>
+    </item>
+    
+  </channel>
+</rss>

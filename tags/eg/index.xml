@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eg on 找个时间</title>
+    <link>https://beeky86.github.io/tags/eg/</link>
+    <description>Recent content in eg on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/eg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>eg</title>
+      <link>https://beeky86.github.io/post/eg/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/eg/</guid>
+      <description>全局变量 setlocal enabledelayedexpansion 网络路径用户密码 net use \\\\Cozcadata\\管理部-网管 cozca690919 /user:admin 举例 robocopy %orginal% %target% /PURGE /e /W:10 /ETA /mt:5 /xf \*.tmp \*.bak /log:d:\\list.txt 主程序 robocopy %orginal% %target% set orginal=D:\\行政网管\\ set target=\\\\Cozcadata\\管理部-网管\\行政网管\\ 附加参数 /PURGE ：删除源中不再存在的目标文件/目录。 /M</description>
+    </item>
+    
+  </channel>
+</rss>

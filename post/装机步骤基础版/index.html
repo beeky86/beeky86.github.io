@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="zh-CN">
+
+
+<head>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>找个时间</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  
+    
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="270" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="/assets/waifu-tips.js"></script>
+    <script src="/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("/assets/")</script>
+</body>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>装机步骤基础版 | 找个时间</title>
+    <meta property="og:title" content="装机步骤基础版 - 找个时间">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2020-04-02T00:00:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-04-02T00:00:00&#43;08:00'>
+        
+    <meta name="Keywords" content="hugo,markdown">
+    <meta name="description" content="装机步骤基础版">
+        
+    <meta name="author" content="wakaka">
+    <meta property="og:url" content="https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%9F%BA%E7%A1%80%E7%89%88/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-4031353640611810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://beeky86.github.io">
+                        找个时间
+                    </a>
+                
+                <p class="description">个人知识分享平台</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://beeky86.github.io">首页</a>
+                    
+                    <a  href="https://beeky86.github.io/mermaid/" title="mermaid测试">mermaid测试</a>
+                    
+                    <a  href="https://beeky86.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://beeky86.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 250px;
+        margin-left: -260px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#准备">准备</a>
+      <ul>
+        <li><a href="#pe">PE</a></li>
+        <li><a href="#系统">系统</a></li>
+        <li><a href="#bios">BIOS</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装pe">安装PE</a></li>
+    <li><a href="#进入pe">进入PE</a></li>
+    <li><a href="#新系统基础环境配置">新系统基础环境配置</a>
+      <ul>
+        <li><a href="#oobe">OOBE</a></li>
+        <li><a href="#uac更改">uac更改</a></li>
+        <li><a href="#开启net-framework35和smb10">开启net framework3.5和smb1.0</a></li>
+        <li><a href="#msvbcrtaio">MSVBcrtAio</a></li>
+        <li><a href="#directx">DirectX</a></li>
+      </ul>
+    </li>
+    <li><a href="#优化系统">优化系统</a>
+      <ul>
+        <li><a href="#文件资源管理器">文件资源管理器</a></li>
+        <li><a href="#远程连接">远程连接</a></li>
+        <li><a href="#更改计算机名">更改计算机名</a></li>
+        <li><a href="#更改用户名">更改用户名</a></li>
+        <li><a href="#预输入密码">预输入密码</a></li>
+        <li><a href="#win10系统恢复图片查看器">win10系统恢复图片查看器</a></li>
+      </ul>
+    </li>
+    <li><a href="#windows更新">windows更新</a>
+      <ul>
+        <li><a href="#系统升级安装驱动">系统升级|安装驱动</a></li>
+        <li><a href="#官网下载对应显卡驱动">官网下载对应显卡驱动</a></li>
+        <li><a href="#重定位win10默认文件夹">重定位win10默认文件夹</a></li>
+        <li><a href="#系统激活">系统激活</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">装机步骤基础版</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年4月2日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B'>教程</a></span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/hugo'>hugo</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h1 id="装机步骤基础版">装机步骤基础版</h1>
+<blockquote>
+<p>内部备忘</p>
+</blockquote>
+<p>[toc]</p>
+<p>参考网站链接</p>
+<p>it天空<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>msdn<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>远景<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<h2 id="准备">准备</h2>
+<h3 id="pe">PE</h3>
+<p>下载最新版<a href="https://www.itsk.com/idata/headerUrlRedirect.php?index=3">EasyU</a><!-- raw HTML omitted --></p>
+<blockquote>
+<p>可选<a href="https://www.itsk.com/idata/headerUrlRedirect.php?index=2">万能驱动</a></p>
+</blockquote>
+<p>移动硬盘、U盘安装PE</p>
+<h3 id="系统">系统</h3>
+<p>下载地址：远景或msdn 
+        <img class="mx-auto" alt="win10" src="../iphoto/win8_x48x55.png" />   
+    </p>
+<table>
+<thead>
+<tr>
+<th>下载地址</th>
+<th><a href="http://bbs.pcbeta.com/forum-win10-1.html">远景</a>、<a href="https://msdn.itellyou.cn/" title="msdn.itellyou.cn">msdn</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>win7</td>
+<td><a href="ed2k://filecn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso3420557312B58548681854236C7939003B583A8078%7Ch=TQXCJQ2QAYCXKMFQKKHRZJ4WE34T3TDA%7C/" title="Ultimate">Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified)</a></td>
+</tr>
+<tr>
+<td>win10</td>
+<td><a href="ed2k://%7Cfile%7Ccn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso%7C4478906368%7CE7C526499308841A4A6D116C857DB669%7C/" title="LTSC">Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified)</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="D:/download/ipackage/" title="17763.914.191210-0800.rs5_refresh_enterprise_ltsc_2019_x64frev_zh-cn_8a576755.iso">win10-LTSC</a></p>
+<h3 id="bios">BIOS</h3>
+<p>设置磁盘模式。</p>
+<p>常用：AHCI、UEFI、GPT</p>
+<blockquote>
+<p>磁盘模式默认选<strong>AHCI</strong></p>
+<p>引导方式默认选<strong>UEFI</strong>或<strong>legacy+URFI</strong></p>
+<p><strong>分区格式</strong>对应<strong>引导方式</strong></p>
+<p>optane会自动转换成RAID模式（此处要写optane专栏）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>分区格式</th>
+<th>引导方式</th>
+<th>磁盘模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPT</td>
+<td>UEFI</td>
+<td>IDE</td>
+</tr>
+<tr>
+<td>MBR</td>
+<td>legacy</td>
+<td>AHCI</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>RAID</td>
+</tr>
+</tbody>
+</table>
+<h2 id="安装pe">安装PE</h2>
+<blockquote>
+<p>提前备份U盘文件，此处会格式化U盘。</p>
+</blockquote>
+<p>选择<code>u盘模式</code>，选择插入的u盘，（之前做过pe盘的，先点<code>还原空间</code>），写入模式选择<code>USB-HDD</code>，分区格式选择<code>NTFS</code>，点<code>全新制作</code>。</p>
+<h2 id="进入pe">进入PE</h2>
+<blockquote>
+<p><strong>分区格式</strong>对应<strong>引导方式</strong></p>
+</blockquote>
+<ul>
+<li>
+<p>插入PE盘</p>
+</li>
+<li>
+<p>选择启动项</p>
+<blockquote>
+<p>一般为<code>F12</code>、<code>esc</code>等</p>
+</blockquote>
+</li>
+<li>
+<p>运行<code>EasyImageX2</code></p>
+<ul>
+<li>格式化磁盘
+<ul>
+<li>选择对应磁盘-右边按钮-<code>快速分区</code></li>
+<li>磁盘格式选<code>GPT</code>；勾选<code>ESP分区</code>、<code>MSR分区</code>；选择合适的分区大小</li>
+</ul>
+</li>
+<li>左边选择恢复镜像</li>
+<li>右边选择目标分区</li>
+<li>点击<code>一键恢复</code></li>
+<li>只勾选以下
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 尝试重建系统引导</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>重启</p>
+</li>
+</ul>
+<h2 id="新系统基础环境配置">新系统基础环境配置</h2>
+<h3 id="oobe">OOBE</h3>
+<p>重启后OOBE阶段不要联网，选择跳过。</p>
+<h3 id="uac更改">uac更改</h3>
+<h3 id="开启net-framework35和smb10">开启net framework3.5和smb1.0</h3>
+<p><code>alt</code>+<code>x</code> 按<code>f</code> <code>应用和功能</code>-右上角-<code>程序和功能</code> -左边-<code>启用或关闭Windows功能</code>  ,勾选以下</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <code>net framework3.5</code></li>
+<li><input checked="" disabled="" type="checkbox"> <code>smb 1.0/CIFS文件共享支持</code></li>
+</ul>
+<h3 id="msvbcrtaio">MSVBcrtAio</h3>
+<p><a href="http://11269771.ch1.ctc.data.tv002.com/down/8692eec110ce692823f831ead8d7ff03/MSVBCRT.AIO.2019.10.19.X86%20X64.exe?cts=dx-f-D114A224A77A17F3f651&amp;ctp=114A224A77A17&amp;ctt=1584103169&amp;limit=1&amp;spd=30000&amp;ctk=8692eec110ce692823f831ead8d7ff03&amp;chk=9cf50c3020f03ec2e8ab3afe094d3f6f-36821436&amp;mtd=1" title="MSVBCRT.AIO.2019.10.19.X86 X64.exe">微软常用运行库合集-2019.10.19</a></p>
+<blockquote>
+<p>可选<a href="">Visual C++ AIO by Wilenty 2018-01-06（解决XD闪退问题）</a></p>
+</blockquote>
+<h3 id="directx">DirectX</h3>
+<p><a href="https://www.baidu.com/s?wd=directX%20Repair%20Enhanced%20Edition">DirectX Repair V3.9 (Enhanced Edition)</a></p>
+<blockquote>
+<p>可选：打开c++强力修复模式</p>
+</blockquote>
+<h2 id="优化系统">优化系统</h2>
+<h3 id="文件资源管理器">文件资源管理器</h3>
+<p>上面选项卡-<code>查看</code></p>
+<ul>
+<li>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <code>文件扩展名</code></li>
+</ul>
+</li>
+<li>
+<p><code>选项</code>-<code>常规</code>选项卡-打开文件资源管理器时打开<code>此电脑</code></p>
+</li>
+</ul>
+<h3 id="远程连接">远程连接</h3>
+<p>右击<code>此电脑</code>-<code>管理</code>-左边<code>高级系统设置</code>-<code>远程</code>选项卡-选择<code>允许远程连接到此计算机</code></p>
+<h3 id="更改计算机名">更改计算机名</h3>
+<p>右击<code>此电脑</code>-<code>管理</code>-左边<code>高级系统设置</code>-<code>计算机名</code>选项卡-<code>更改</code>-输入新的名称</p>
+<h3 id="更改用户名">更改用户名</h3>
+<p><code>alt</code>+<code>x</code> 按<code>g</code> <code>本地用户和组</code>-<code>用户</code>-右击需要修改的名字-<code>重命名</code></p>
+<h3 id="预输入密码">预输入密码</h3>
+<blockquote>
+<p>只在公共场合等需要直接进入桌面的场景下使用</p>
+</blockquote>
+<p><code>win</code>+<code>r</code>输入<code>Control userpasswords2</code></p>
+<p>打开<code>用户账户</code>-选择自己的用户名-取消勾选<code>要使用本计算机，用户必须输入用户名和密码</code>-<code>应用</code>-输入当前账户密码</p>
+<h3 id="win10系统恢复图片查看器">win10系统恢复图片查看器</h3>
+<p>导入以下</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Windows Registry Editor Version 5.00
+
+\[HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\WindowsPhoto
+Viewer\\Capabilities\\FileAssociations\]
+
+\<span style="color:#d14">&#34;.tif\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.tiff\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.jpg\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.jpeg\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.bmp\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.gif\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.png\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+
+\<span style="color:#d14">&#34;.ico\&#34;</span>=\<span style="color:#d14">&#34;PhotoViewer.FileAssoc.Tiff\&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>新建<code>txt</code>文档，复制以上内容，修改文件后缀为<code>.reg</code>,双击运行。</p>
+<h2 id="windows更新">windows更新</h2>
+<h3 id="系统升级安装驱动">系统升级|安装驱动</h3>
+<p><code>win</code>-<code>设置</code>-<code>更新和安全</code>-联网下载安装</p>
+<h3 id="官网下载对应显卡驱动">官网下载对应显卡驱动</h3>
+<blockquote>
+<p>windows自动更新的N卡驱动（A卡无样本测试）会有不能正常升级或不是最新的问题。</p>
+</blockquote>
+<p><a href="https://www.nvidia.cn/Download/index.aspx?lang=cn" title="官网下载页面">NVIDIA官网驱动下载</a></p>
+<h3 id="重定位win10默认文件夹">重定位win10默认文件夹</h3>
+<blockquote>
+<p>win10默认的<code>文件夹组</code>在C盘，影响数据归档。</p>
+</blockquote>
+<blockquote>
+<p>e.g. D盘新建<code>文档</code>文件夹</p>
+<p>​		右击<code>资源管理器</code>中<code>文件夹组</code>的<code>文档</code>文件夹-<code>属性</code>-<code>位置</code>选项卡-<code>移动</code>-选择刚才创建的文件夹</p>
+<p>其他文件夹同理。</p>
+</blockquote>
+<h3 id="系统激活">系统激活</h3>
+<p><a href="http://2783079.ch1.ctc.data.tv002.com/down/7a07596cb116edf833e8ba024ce61afa/AAct3.9.91.zip?cts=dx-f-D114A224A77A17F3f651&amp;ctp=114A224A77A17&amp;ctt=1584111533&amp;limit=1&amp;spd=46000&amp;ctk=7a07596cb116edf833e8ba024ce61afa&amp;chk=5d2c8aad9429461acfa937a5061b388e-3372642&amp;mtd=1" title="第三方下载页面">AAct v3.9.9.1 portable</a></p>
+<blockquote>
+<p>该软件用来激活win系统，虽然有激活office的功能，但或与基于mondo激活的office365有冲突，自行斟酌</p>
+</blockquote>
+<ul>
+<li>
+<p>点左下角齿轮⚙图标</p>
+<ul>
+<li>左侧选择<code>auto mode</code>-<code>确定</code></li>
+</ul>
+</li>
+<li>
+<p>点左上角<code>windows activation</code></p>
+<ul>
+<li>
+<p>期间各类管家软件会报错，及时添加至信任区。</p>
+<blockquote>
+<p>未及时关闭可能导致激活失败，建议重试。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>成功后会有激活成功字样。</p>
+</li>
+</ul>
+<blockquote>
+<p>默认激活180天，可设置计划任务或手动运行。</p>
+</blockquote>
+<p>金励©2020 | Power by Typora</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>(<a href="https://www.itsk.com/">https://www.itsk.com/</a>) (<a href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a>) (<a href="http://www.pcbeta.com/">http://www.pcbeta.com/</a>) <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://beeky86.github.io">wakaka</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%9F%BA%E7%A1%80%E7%89%88/">https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%9F%BA%E7%A1%80%E7%89%88/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/chocolatey/">chocolatey</a></li>
+        
+        <li><a href="/post/eg/">eg</a></li>
+        
+        <li><a href="/post/excel%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%A9%BA%E7%99%BD%E5%80%BC%E5%8E%BB%E9%99%A4/">excel下拉菜单空白值去除</a></li>
+        
+        <li><a href="/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/">html链接跳转</a></li>
+        
+        <li><a href="/post/hugo-github/">hugo-github</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://beeky86.github.io/tags/hugo'>hugo</a></li>
+                
+                <li><a href='https://beeky86.github.io/tags/markdown'>markdown</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "your github repo"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                
+
+
+
+<div id="secondary">
+    <section class="widget">
+
+
+        <form id="search" action='https://beeky86.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://beeky86.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+
+
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://beeky86.github.io/post/cmd_tree/" title="cmd_tree">cmd_tree</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/" title="markdown_流程图绘制_sequence">markdown_流程图绘制_sequence</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/ftp/" title="ftp">ftp</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/" title="markdown_流程图绘制_flow">markdown_流程图绘制_flow</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/" title="远程唤醒电脑">远程唤醒电脑</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/" title="Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动">Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/" title="typorad下基于picgo-core的图床服务">typorad下基于picgo-core的图床服务</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/" title="快速获取excel工作簿中所有工作表的名称">快速获取excel工作簿中所有工作表的名称</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/FrontMatter/" title="FrontMatter">FrontMatter</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="Hugo - 安装、设置及使用">Hugo - 安装、设置及使用</a>
+    </li>
+    
+</ul>
+    </section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://beeky86.github.io/tags/FrontMatter/">FrontMatter </a>
+    
+    <a href="https://beeky86.github.io/tags/Realtek/">Realtek</a>
+    
+    <a href="https://beeky86.github.io/tags/bat/">bat</a>
+    
+    <a href="https://beeky86.github.io/tags/checkra1n_/">checkra1n_</a>
+    
+    <a href="https://beeky86.github.io/tags/chocolatey/">chocolatey</a>
+    
+    <a href="https://beeky86.github.io/tags/cmd/">cmd</a>
+    
+    <a href="https://beeky86.github.io/tags/eg/">eg</a>
+    
+    <a href="https://beeky86.github.io/tags/excel/">excel</a>
+    
+    <a href="https://beeky86.github.io/tags/flow/">flow</a>
+    
+    <a href="https://beeky86.github.io/tags/ftp/">ftp</a>
+    
+    <a href="https://beeky86.github.io/tags/github/">github</a>
+    
+    <a href="https://beeky86.github.io/tags/html/">html</a>
+    
+    <a href="https://beeky86.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://beeky86.github.io/tags/markdown/">markdown</a>
+    
+    <a href="https://beeky86.github.io/tags/mermaid/">mermaid</a>
+    
+    <a href="https://beeky86.github.io/tags/office/">office</a>
+    
+    <a href="https://beeky86.github.io/tags/pe/">pe</a>
+    
+    <a href="https://beeky86.github.io/tags/sequence/">sequence</a>
+    
+    <a href="https://beeky86.github.io/tags/sync/">sync</a>
+    
+    <a href="https://beeky86.github.io/tags/themes/">themes</a>
+    
+    <a href="https://beeky86.github.io/tags/tree/">tree</a>
+    
+    <a href="https://beeky86.github.io/tags/uac/">uac</a>
+    
+    <a href="https://beeky86.github.io/tags/ubuntu/">ubuntu</a>
+    
+    <a href="https://beeky86.github.io/tags/wifi/">wifi</a>
+    
+    <a href="https://beeky86.github.io/tags/wmic/">wmic</a>
+    
+    <a href="https://beeky86.github.io/tags/wol/">wol</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/">局域网</a>
+    
+    <a href="https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/">整理</a>
+    
+    <a href="https://beeky86.github.io/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+    
+    <a href="https://beeky86.github.io/tags/%E9%AC%BC%E5%90%B9%E7%81%AF/">鬼吹灯</a>
+    
+</div>
+    </section>
+
+
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://beeky86.github.io/categories/excel/">excel (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/hugo/">hugo (26)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/office/">office (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/windows/">windows (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E5%A8%B1%E4%B9%90/">娱乐 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B/">教程 (28)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/">文件目录 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图 (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E9%A9%B1%E5%8A%A8/">驱动 (1)</a></li>
+    
+</ul>
+    </section>
+
+
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">博主站点</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://live.bilibili.com/22180527" title="快来B站看beeky86的直播啦" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/ypmXLvGosaxbAul.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.douban.com/people/58285853/" title="博主的豆瓣" target="_blank" style="color:red">
+                
+                    <img src="https://img3.doubanio.com/dae/accounts/resources/1f8d15e/sns/assets/lg_main@2x.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.guokr.com/" title="果壳" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/HgTXherR9o73aAE.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://music.163.com/" title="网易云音乐" target="_blank" style="color:red">
+                
+                    <img src="https://static.xmt.cn/6c82dbabf8524074aaf2b6fd5ca05c7f.png">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://music.163.com/" title="网易云音乐">网易云音乐</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://map.baidu.com" title="百度地图">百度地图</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://beeky86.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://beeky86.github.io">找个时间 By wakaka</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+
+  
+  <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+  <script>
+        mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+
+</html>

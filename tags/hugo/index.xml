@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 找个时间</title>
+    <link>https://beeky86.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>markdown_流程图绘制_sequence</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/</guid>
+      <description>sequence 语法概览 sequence_语法 语法详情 标题：sequence 图标题。 title+:+标题内容 注释：对参与构成序列图成员的描述 在成员左边 note left of+actor+注释内容 在成员右边 note right of+actor+注释内容 悬浮在成员体上 note over+actorA+,+actorB+注释内容 流向(箭</description>
+    </item>
+    
+    <item>
+      <title>markdown_流程图绘制_flow</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/</guid>
+      <description>flow 概述 流程图的语法大致分为两部分。 定义元素 连接元素 定义元素 语法概览 tag=&amp;gt;type: content:&amp;gt;url 语法解释 tag：标签，用于连接元素时使用 type：该标签的类型。共有6种类型如下： 标签类型 解释 start 开始节点 end 结束节点 operation 操作节点 subroutine 子程序节点 condition 条件节点 inputoutput 输入或产出节点 content：流程语句中放置的内容 conten</description>
+    </item>
+    
+    <item>
+      <title>远程唤醒电脑</title>
+      <link>https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/</guid>
+      <description>远程唤醒电脑 基于有线网络连接下的环境。 内网唤醒 准备工作 主板 主板需要支持 WOL网络唤醒功能。 进入主板设置，查找wake on lan、resume on lan、power on PME、power on by PCI-E device、Power on by Onboard LAN 等选项，将其设为Enabled。 网卡 在网卡驱动里开启 WOL 相关选项。</description>
+    </item>
+    
+    <item>
+      <title>typorad下基于picgo-core的图床服务</title>
+      <link>https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/</guid>
+      <description>1.安装PicGo-Core 安装smms v2 API，gitee-uploader，github-plus插件来支持smms，gitee，github图床上传。 打开cmd进入当前路径，并执行安装插件 cd C:\Users\jaymie\AppData\Roaming\Typora\picgo\win64 .\picgo.exe install smms-user .\picgo.exe install gitee-uploader .\picgo.exe install github-plus 3. 配置PicGo-Core 安装完成之后点击红色4的位置， 打开Pi</description>
+    </item>
+    
+    <item>
+      <title>快速获取excel工作簿中所有工作表的名称</title>
+      <link>https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/</guid>
+      <description>快速获取excel工作簿中所有工作表的名称 需求 快速获取excel工作簿中所有工作表的名称 场景 一个工作薄中包含多个工作表 步骤 在第一个工作表制作目录 在目录工作表中点击公式选项卡 选择名称管理器 将=GET.WORKBOOK(1)定义一个名称，本例定义成了目录，在第一个工作表任意单元格中输</description>
+    </item>
+    
+    <item>
+      <title>FrontMatter</title>
+      <link>https://beeky86.github.io/post/FrontMatter/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/FrontMatter/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;新生成的文章会在开始部分添加元数据, 数据格式为 yaml toml json格式如下&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo - 安装、设置及使用</title>
+      <link>https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo-文件结构概览</title>
+      <link>https://beeky86.github.io/post/hugo-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/hugo-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84%E6%A6%82%E8%A7%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wmic-改计算机名</title>
+      <link>https://beeky86.github.io/post/wmic-%E6%94%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/wmic-%E6%94%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 @echo off setlocal enabledelayedexpansion rem ====================提权====================== cd /d &amp;#34;%~dp0&amp;#34; cacls.exe &amp;#34;%SystemDrive%\System Volume Information&amp;#34; &amp;gt;nul 2&amp;gt;nul if %errorlevel%==0 goto Admin if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; echo Set RequestUAC = CreateObject^(&amp;#34;Shell.Application&amp;#34;^)&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo RequestUAC.ShellExecute &amp;#34;%~s0&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1 &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo WScript.Quit &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; &amp;#34;%temp%\getadmin.vbs&amp;#34; /f if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; exit :Admin rem ====================提权=</description>
+    </item>
+    
+    <item>
+      <title>bat提权</title>
+      <link>https://beeky86.github.io/post/bat%E6%8F%90%E6%9D%83/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/bat%E6%8F%90%E6%9D%83/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 cd /d &amp;#34;%~dp0&amp;#34; cacls.exe &amp;#34;%SystemDrive%\System Volume Information&amp;#34; &amp;gt;nul 2&amp;gt;nul if %errorlevel%==0 goto Admin if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; echo Set RequestUAC = CreateObject^(&amp;#34;Shell.Application&amp;#34;^)&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo RequestUAC.ShellExecute &amp;#34;%~s0&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1 &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo WScript.Quit &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; &amp;#34;%temp%\getadmin.vbs&amp;#34; /f if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; exit :Admin</description>
+    </item>
+    
+    <item>
+      <title>chocolatey</title>
+      <link>https://beeky86.github.io/post/chocolatey/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/chocolatey/</guid>
+      <description>Chocolatey-windows 下强大的软件包管理工具 软件的精髓就是看它版本号不断更新 在 Linux 下，大家喜欢用 apt-get 来安装应用程序，如今在 windows 下，大家可以使用 Chocolatey 来快速下载搭建一个开发环境。 Chocolatey 的哲学就是完全用命令行来安装应用程序， 它更像一个包管理工具（背后使用 Nuget ） 另外需要说明的是， Chocolatey 只是把官方下载路径封装到了 Chocolatey 中，所以下载</description>
+    </item>
+    
+    <item>
+      <title>eg</title>
+      <link>https://beeky86.github.io/post/eg/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/eg/</guid>
+      <description>全局变量 setlocal enabledelayedexpansion 网络路径用户密码 net use \\\\Cozcadata\\管理部-网管 cozca690919 /user:admin 举例 robocopy %orginal% %target% /PURGE /e /W:10 /ETA /mt:5 /xf \*.tmp \*.bak /log:d:\\list.txt 主程序 robocopy %orginal% %target% set orginal=D:\\行政网管\\ set target=\\\\Cozcadata\\管理部-网管\\行政网管\\ 附加参数 /PURGE ：删除源中不再存在的目标文件/目录。 /M</description>
+    </item>
+    
+    <item>
+      <title>excel下拉菜单空白值去除</title>
+      <link>https://beeky86.github.io/post/excel%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%A9%BA%E7%99%BD%E5%80%BC%E5%8E%BB%E9%99%A4/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/excel%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%A9%BA%E7%99%BD%E5%80%BC%E5%8E%BB%E9%99%A4/</guid>
+      <description>excel下拉菜单空白值去除 问题 为了规范表格数据录入，我们常用到Excel的“数据有效性”功能在单元格设置下拉菜单，引用固定区域数据作为标准录入内容。有很多时候，这个区域的数据是用公式生成的，如果直接引用一个固定范围，比如说D1:D50，可能实际返回的数据只有8个，下拉菜单会出现</description>
+    </item>
+    
+    <item>
+      <title>html链接跳转</title>
+      <link>https://beeky86.github.io/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/</guid>
+      <description>HTML使用相对路径获取各级目录下文件方式详解 相对路径的概念 以当前文件所在位置为参考点，建立目标文件的路径。 绝对路径的概念 整个文件的完整路径，比如X:\www\web\index.html，或者 http://waldo.com.cn/index.html 。这两者都属于绝对路径。 相对路径多种使用方式详解 假设当前有一个页面，要链接到一个页面</description>
+    </item>
+    
+    <item>
+      <title>hugo-github</title>
+      <link>https://beeky86.github.io/post/hugo-github/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/hugo-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo_themes</title>
+      <link>https://beeky86.github.io/post/hugo_themes/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/hugo_themes/</guid>
+      <description>https://themes.gohugo.io/academic/ https://github.com/gcushen/hugo-academic 2020-04-15 4211 https://themes.gohugo.io/hugo-theme-even/ https://github.com/olOwOlo/hugo-theme-even 2020-04-16 1000 https://themes.gohugo.io/hugo-coder/ https://github.com/luizdepra/hugo-coder 2020-04-13 906 https://themes.gohugo.io/hugo-theme-learn/ https://github.com/matcornic/hugo-theme-learn 2020-03-09 904 https://themes.gohugo.io/docsy/ https://github.com/google/docsy 2020-04-14 719 https://themes.gohugo.io/beautifulhugo/ https://github.com/halogenica/beautifulhugo 2019-11-28 674 https://themes.gohugo.io/hugo-tranquilpeak-theme/ https://github.com/kakawait/hugo-tranquilpeak-theme 2019-08-15 610 https://themes.gohugo.io/hugo-book/ https://github.com/alex-shpak/hugo-book 2020-04-15 567 https://themes.gohugo.io/hermit/ https://github.com/Track3/hermit 2020-03-08 547 https://themes.gohugo.io/hugo-theme-jane/ https://github.com/xianmin/hugo-theme-jane 2020-02-16 528 https://themes.gohugo.io/hugo-theme-terminal/ https://github.com/panr/hugo-theme-terminal 2020-04-14 431 https://themes.gohugo.io/hugo-universal-theme/ https://github.com/devcows/hugo-universal-theme 2019-12-13 426 https://themes.gohugo.io/gohugo-theme-ananke/ https://github.com/budparr/gohugo-theme-ananke 2020-02-18 423 https://themes.gohugo.io/hugo-theme-hello-friend-ng/ https://github.com/rhazdon/hugo-theme-hello-friend-ng 2020-04-09 418 https://themes.gohugo.io/docuapi/ https://github.com/bep/docuapi 2020-03-09 404 https://themes.gohugo.io/minimo/ https://github.com/MunifTanjim/minimo 2020-04-09 387 https://themes.gohugo.io/hyde/ https://github.com/spf13/hyde 2020-02-23 379 https://themes.gohugo.io/mainroad/ https://github.com/Vimux/mainroad 2020-04-09 370 https://themes.gohugo.io/hugo-paper/ https://github.com/nanxiaobei/hugo-paper 2020-03-10 369 https://themes.gohugo.io/hugo-theme-hello-friend/ https://github.com/panr/hugo-theme-hello-friend 2020-04-14 346 https://themes.gohugo.io/hugo-theme-cactus-plus/ https://github.com/nodejh/hugo-theme-cactus-plus 2018-02-15 326 https://themes.gohugo.io/kube/ https://github.com/jeblister/kube 2019-03-08 325 https://themes.gohugo.io/hugo-theme-introduction/ https://github.com/vickylaixy/hugo-theme-introduction 2020-04-13 313 https://themes.gohugo.io/leaveit/ https://github.com/liuzc/LeaveIt 2018-11-04 287 https://themes.gohugo.io/future-imperfect/ https://github.com/jpescador/hugo-future-imperfect 2018-02-27 285 https://themes.gohugo.io/hugo-xmin/ https://github.com/yihui/hugo-xmin 2019-08-16 283 https://themes.gohugo.io/minimal/ https://github.com/calintat/minimal 2020-03-27 279 https://themes.gohugo.io/hugo-fresh/ https://github.com/lucperkins/hugo-fresh 2019-12-04 269 https://themes.gohugo.io/loveit/ https://github.com/dillonzq/LoveIt 2020-04-15 255 https://themes.gohugo.io/hugo-theme-sam/ https://github.com/hivickylai/hugo-theme-sam 2020-04-11 255 https://themes.gohugo.io/reveal-hugo/ https://github.com/dzello/reveal-hugo 2020-04-12 253 https://themes.gohugo.io/hugo-creative-portfolio-theme/ https://github.com/kishaningithub/hugo-creative-portfolio-theme 2019-10-20 252 https://themes.gohugo.io/kiss/ https://github.com/ribice/kiss 2020-04-13 213 https://themes.gohugo.io/hugo-theme-cleanwhite/ https://github.com/zhaohuabing/hugo-theme-cleanwhite 2020-03-06 202 https://themes.gohugo.io/cactus/ https://github.com/digitalcraftsman/hugo-cactus-theme 2019-07-07 201</description>
+    </item>
+    
+    <item>
+      <title>markdown_流程图绘制_mermaid</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</guid>
+      <description>mermaid gantt gantt title 甘特图示例一 section 迭代一 任务一 :a1, 2014-01-01, 30d 任务二 :after a1 , 20d section 迭代二 任务三 :2014-01-12 , 12d 任务四 : 24d</description>
+    </item>
+    
+    <item>
+      <title>ubuntu_checkra1n_越狱</title>
+      <link>https://beeky86.github.io/post/ubuntu_checkra1n_%E8%B6%8A%E7%8B%B1/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/ubuntu_checkra1n_%E8%B6%8A%E7%8B%B1/</guid>
+      <description>1 2 3 4 5 6 #install checkra1n echo &amp;#34;deb https://assets.checkra.in/debian /&amp;#34; | sudo tee -a /etc/apt/sources.list sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key sudo apt update sudo apt upgrade sudo apt install checkra1n</description>
+    </item>
+    
+    <item>
+      <title>文件命名规范</title>
+      <link>https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</guid>
+      <description>一次整理终生轻松的文件整理术 0. 无序根源 你是否每次打开电脑，桌面都一片文件，聪明的你，竟然每次都能一眼找到昨天的那个文件，不过你也经常有失误的时候，比如说，老板突然跟你要…… 你说，我桌面非常整洁，那是因为你经常聪明地建立一个名叫「待整理」的文件夹，这个神奇的文件夹竟然能装下所有的混</description>
+    </item>
+    
+    <item>
+      <title>番茄钟_bat</title>
+      <link>https://beeky86.github.io/post/%E7%95%AA%E8%8C%84%E9%92%9F_bat/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E7%95%AA%E8%8C%84%E9%92%9F_bat/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 @echo off setlocal enabledelayedexpansion title 25mins-番茄钟 mode con cols=40 lines=8 &amp;amp; color 2f&amp;amp;set z=0 :t cls&amp;amp;set /a z+=1&amp;amp;set s=0 for /l %%i in (1,1,1500) do ( echo !date!&amp;amp;echo 循环次数：%z%次&amp;amp;set /a s+=1&amp;amp;echo 本轮时间!s!秒 if !s!==3 (goto d) ping -n 2 127.1&amp;gt;nul&amp;amp;cls ) :d echo done&amp;amp;mshta vbscript:msgbox(&amp;#34;恭喜完成第%z%个番茄钟，休息5分钟再回来吧=￣ω￣=&amp;#3</description>
+    </item>
+    
+    <item>
+      <title>装机步骤基础版</title>
+      <link>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%9F%BA%E7%A1%80%E7%89%88/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%9F%BA%E7%A1%80%E7%89%88/</guid>
+      <description>装机步骤基础版 内部备忘 [toc] 参考网站链接 it天空1msdn1远景1 准备 PE 下载最新版EasyU 可选万能驱动 移动硬盘、U盘安装PE 系统 下载地址：远景或msdn 下载地址 远景、msdn win7 Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified) win10 Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified) win10-LTSC BIOS 设置磁盘模式。 常用：AHCI、UEFI、GPT 磁盘模式默认选</description>
+    </item>
+    
+    <item>
+      <title>装机步骤备忘#PE部分</title>
+      <link>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%A4%87%E5%BF%98#PE%E9%83%A8%E5%88%86/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%A4%87%E5%BF%98#PE%E9%83%A8%E5%88%86/</guid>
+      <description>装机步骤 PE部分 内部备忘 [toc] 参考网站链接 it天空1msdn1远景1 准备 PE 下载最新版EasyU 可选万能驱动 系统 下载地址 远景、msdn win7 Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified) win10 Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified) BIOS 设置磁盘模式。 常用：AHCI、UEFI、GPT 磁盘模式默认选AHCI 引导方式默认选UEFI或legacy+</description>
+    </item>
+    
+    <item>
+      <title>装机步骤备忘#局域网扩充</title>
+      <link>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%A4%87%E5%BF%98#%E5%B1%80%E5%9F%9F%E7%BD%91%E6%89%A9%E5%85%85/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%A3%85%E6%9C%BA%E6%AD%A5%E9%AA%A4%E5%A4%87%E5%BF%98#%E5%B1%80%E5%9F%9F%E7%BD%91%E6%89%A9%E5%85%85/</guid>
+      <description>解决局域网下本地空密码账户无法登陆 win-gpedit-组策略-计算机配置-windows设置-安全设置-本地策略-安全选项-账户：使用空密码的本地账户只允许进行控制台登陆-设置成已禁用 解决win10无法访问局域网其他计算机 win-gpedit-组策略-计算机配置-管理模版-网络</description>
+    </item>
+    
+    <item>
+      <title>软件资源归档</title>
+      <link>https://beeky86.github.io/post/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BD%92%E6%A1%A3/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BD%92%E6%A1%A3/</guid>
+      <description>系统 来源 msdn.itellyou.cn win7 Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified) win10 Windows 10 Enterprise LTSC 2019 (x64) - DVD (Chinese-Simplified) office365 教程参考胡萝卜周 http://www.carrotchou.blog/22510.html 基于mondo激活 步骤 打开Office Tool Plus.exe 点击上方部署-勾选需要安装的产品-点击开始部署 点击上方激活 许可证管理选择office mondo 2016 volume-点击安装许可证 密钥管理填入HFTND-W9MK4-8B7MJ-</description>
+    </item>
+    
+    <item>
+      <title>鬼吹灯作品统计</title>
+      <link>https://beeky86.github.io/post/%E9%AC%BC%E5%90%B9%E7%81%AF%E4%BD%9C%E5%93%81%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E9%AC%BC%E5%90%B9%E7%81%AF%E4%BD%9C%E5%93%81%E7%BB%9F%E8%AE%A1/</guid>
+      <description>鬼吹灯原著|影视作品统计 原著顺序 名称 系列 形式 视频源 导演 日期 备注 1 精绝古城 第一部 电视剧 腾讯 孔笙|孙墨龙 2016 2 龙岭迷窟 第一部 电视剧 腾讯 费振翔 2020 电影 爱奇艺 朴成淑 2020 电影 腾讯 非行 2017 导演垃圾 3 云南虫谷 第一部 电影 爱奇艺 非行 2018 导演垃圾 4 昆仑神宫 第一部 电影 爱奇艺 非行 2019 导演垃圾 5 黄皮子坟 第二部 电视剧 腾</description>
+    </item>
+    
+  </channel>
+</rss>

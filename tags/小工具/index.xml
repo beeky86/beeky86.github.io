@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小工具 on 找个时间</title>
+    <link>https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 小工具 on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>番茄钟_bat</title>
+      <link>https://beeky86.github.io/post/%E7%95%AA%E8%8C%84%E9%92%9F_bat/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E7%95%AA%E8%8C%84%E9%92%9F_bat/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 @echo off setlocal enabledelayedexpansion title 25mins-番茄钟 mode con cols=40 lines=8 &amp;amp; color 2f&amp;amp;set z=0 :t cls&amp;amp;set /a z+=1&amp;amp;set s=0 for /l %%i in (1,1,1500) do ( echo !date!&amp;amp;echo 循环次数：%z%次&amp;amp;set /a s+=1&amp;amp;echo 本轮时间!s!秒 if !s!==3 (goto d) ping -n 2 127.1&amp;gt;nul&amp;amp;cls ) :d echo done&amp;amp;mshta vbscript:msgbox(&amp;#34;恭喜完成第%z%个番茄钟，休息5分钟再回来吧=￣ω￣=&amp;#3</description>
+    </item>
+    
+  </channel>
+</rss>

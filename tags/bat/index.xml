@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bat on 找个时间</title>
+    <link>https://beeky86.github.io/tags/bat/</link>
+    <description>Recent content in bat on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/bat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bat提权</title>
+      <link>https://beeky86.github.io/post/bat%E6%8F%90%E6%9D%83/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/bat%E6%8F%90%E6%9D%83/</guid>
+      <description>1 2 3 4 5 6 7 8 9 10 11 12 cd /d &amp;#34;%~dp0&amp;#34; cacls.exe &amp;#34;%SystemDrive%\System Volume Information&amp;#34; &amp;gt;nul 2&amp;gt;nul if %errorlevel%==0 goto Admin if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; echo Set RequestUAC = CreateObject^(&amp;#34;Shell.Application&amp;#34;^)&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo RequestUAC.ShellExecute &amp;#34;%~s0&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;&amp;#34;,&amp;#34;runas&amp;#34;,1 &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; echo WScript.Quit &amp;gt;&amp;gt;&amp;#34;%temp%\getadmin.vbs&amp;#34; &amp;#34;%temp%\getadmin.vbs&amp;#34; /f if exist &amp;#34;%temp%\getadmin.vbs&amp;#34; del /f /q &amp;#34;%temp%\getadmin.vbs&amp;#34; exit :Admin</description>
+    </item>
+    
+  </channel>
+</rss>

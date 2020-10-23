@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>整理 on 找个时间</title>
+    <link>https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/</link>
+    <description>Recent content in 整理 on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>文件命名规范</title>
+      <link>https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</guid>
+      <description>一次整理终生轻松的文件整理术 0. 无序根源 你是否每次打开电脑，桌面都一片文件，聪明的你，竟然每次都能一眼找到昨天的那个文件，不过你也经常有失误的时候，比如说，老板突然跟你要…… 你说，我桌面非常整洁，那是因为你经常聪明地建立一个名叫「待整理」的文件夹，这个神奇的文件夹竟然能装下所有的混</description>
+    </item>
+    
+  </channel>
+</rss>

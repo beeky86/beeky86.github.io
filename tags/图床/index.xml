@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图床 on 找个时间</title>
+    <link>https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/</link>
+    <description>Recent content in 图床 on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>typorad下基于picgo-core的图床服务</title>
+      <link>https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/</guid>
+      <description>1.安装PicGo-Core 安装smms v2 API，gitee-uploader，github-plus插件来支持smms，gitee，github图床上传。 打开cmd进入当前路径，并执行安装插件 cd C:\Users\jaymie\AppData\Roaming\Typora\picgo\win64 .\picgo.exe install smms-user .\picgo.exe install gitee-uploader .\picgo.exe install github-plus 3. 配置PicGo-Core 安装完成之后点击红色4的位置， 打开Pi</description>
+    </item>
+    
+  </channel>
+</rss>

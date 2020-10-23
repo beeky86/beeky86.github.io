@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on 找个时间</title>
+    <link>https://beeky86.github.io/tags/html/</link>
+    <description>Recent content in html on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>html链接跳转</title>
+      <link>https://beeky86.github.io/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/</guid>
+      <description>HTML使用相对路径获取各级目录下文件方式详解 相对路径的概念 以当前文件所在位置为参考点，建立目标文件的路径。 绝对路径的概念 整个文件的完整路径，比如X:\www\web\index.html，或者 http://waldo.com.cn/index.html 。这两者都属于绝对路径。 相对路径多种使用方式详解 假设当前有一个页面，要链接到一个页面</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="zh-CN">
+
+
+<head>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>找个时间</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  
+    
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="270" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="/assets/waifu-tips.js"></script>
+    <script src="/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("/assets/")</script>
+</body>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>mermaid测试 | 找个时间</title>
+    <meta property="og:title" content="mermaid测试 - 找个时间">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2015-03-10T00:13:27&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2015-03-10T00:13:27&#43;08:00'>
+        
+    <meta name="Keywords" content="hugo,markdown">
+    <meta name="description" content="mermaid测试">
+        
+    <meta name="author" content="wakaka">
+    <meta property="og:url" content="https://beeky86.github.io/mermaid/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-4031353640611810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://beeky86.github.io">
+                        找个时间
+                    </a>
+                
+                <p class="description">个人知识分享平台</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://beeky86.github.io">首页</a>
+                    
+                    <a class="current" href="https://beeky86.github.io/mermaid/" title="mermaid测试">mermaid测试</a>
+                    
+                    <a  href="https://beeky86.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://beeky86.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 250px;
+        margin-left: -260px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#参考">参考</a></li>
+    <li><a href="#标准流程图源码格式">标准流程图源码格式：</a></li>
+    <li><a href="#flow">Flow</a>
+      <ul>
+        <li><a href="#基本语言">基本语言</a></li>
+      </ul>
+    </li>
+    <li><a href="#mermaid">mermaid</a>
+      <ul>
+        <li><a href="#基本图形">基本图形</a></li>
+      </ul>
+    </li>
+    <li><a href="#流程图源码格式">流程图源码格式：</a></li>
+    <li><a href="#标准流程图源码格式横向">标准流程图源码格式（横向）：</a></li>
+    <li><a href="#uml">uml</a>
+      <ul>
+        <li><a href="#uml时序图源码复杂样例">UML时序图源码复杂样例：</a></li>
+        <li><a href="#uml标准时序图样例">UML标准时序图样例：</a></li>
+      </ul>
+    </li>
+    <li><a href="#gantt">gantt</a>
+      <ul>
+        <li><a href="#语法">语法</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">mermaid测试</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2015年3月10日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <blockquote>
+<p>mermaid除了绘制甘特图之外，还可以绘制流程图、序列图、统计图表等，下面开始对常用关键字进行说明。</p>
+</blockquote>
+<h2 id="参考">参考</h2>
+<p><a href="https://mermaid-js.github.io/mermaid/#/">https://mermaid-js.github.io/mermaid/#/</a></p>
+<p><a href="https://www.cnblogs.com/wuyida/p/6301240.html">https://www.cnblogs.com/wuyida/p/6301240.html</a></p>
+<h2 id="标准流程图源码格式">标准流程图源码格式：</h2>
+<h2 id="flow">Flow</h2>
+<h3 id="基本语言">基本语言</h3>
+<p>​        我们知道，流程图有几个元素：</p>
+<ul>
+<li>strat：开始框</li>
+<li>operation：处理框</li>
+<li>condition：判断框</li>
+<li>inputoutput：输入输出框</li>
+<li>end：结束框</li>
+<li>subroutine：子流程</li>
+</ul>
+<p>各框通过“-&gt;”连接。定义上述基本元素的语句是：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#a61717;background-color:#e3d2d2">元素</span>ID<span style="color:#000;font-weight:bold">=&gt;</span><span style="color:#a61717;background-color:#e3d2d2">元素类型：展示文字</span>
+
+<span style="color:#a61717;background-color:#e3d2d2">元素</span>ID(<span style="color:#a61717;background-color:#e3d2d2">方向）</span><span style="color:#000;font-weight:bold">-&gt;</span><span style="color:#a61717;background-color:#e3d2d2">元素</span>ID
+</code></pre></td></tr></table>
+</div>
+</div><p>其中，方向有以下四种</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift">(top)
+(bottom)
+(<span style="color:#000;font-weight:bold">right</span>)
+(<span style="color:#000;font-weight:bold">left</span>)
+</code></pre></td></tr></table>
+</div>
+</div><pre><code class="language-flow" data-lang="flow">start1=&gt;start: 初始设计
+op1=&gt;operation: P=0
+op2=&gt;operation: 结构分析与敏度分析
+op3=&gt;operation: 建立原问题（Primal Problem）
+op4=&gt;operation: 建立近似问题（Approximate Proble）
+op5=&gt;operation: 求解近似问题，得到
+
+$X^{P+1}$
+
+cond1=&gt;condition: 是否小于允许误差
+op6=&gt;operation: P=P+1
+end=&gt;end: 结束
+
+start1-&gt;op1-&gt;op2-&gt;op3-&gt;op4-&gt;op5-&gt;cond1
+cond1(no)-&gt;op6(top)-&gt;op2
+cond1(yes)-&gt;end
+
+
+</code></pre><h2 id="mermaid">mermaid</h2>
+<p>流程图方向有下面几个值</p>
+<p>graph LR</p>
+<ul>
+<li>TB 从上到下</li>
+<li>BT 从下到上</li>
+<li>RL 从右到左</li>
+<li>LR 从左到右</li>
+<li>TD 同TB</li>
+</ul>
+<h3 id="基本图形">基本图形</h3>
+<ul>
+<li>
+<p>id + [文字描述]矩形</p>
+</li>
+<li>
+<p>id + (文字描述)圆角矩形</p>
+</li>
+<li>
+<p>id + &gt;文字描述]不对称的矩形</p>
+</li>
+<li>
+<p>id + {文字描述}菱形</p>
+</li>
+<li>
+<p>id + ((文字描述))圆形</p>
+</li>
+<li>
+<p>A &ndash;&gt; B     A带箭头指向B</p>
+<p>A &mdash; B      A不带箭头指向B</p>
+<p>A -.- B      A用虚线指向B</p>
+<p>A -.-&gt; B    A用带箭头的虚线指向B</p>
+<p>A ==&gt; B   A用加粗的箭头指向B</p>
+<p>A &ndash; 描述 &mdash; B       A不带箭头指向B并在中间加上文字描述</p>
+<p>A &ndash; 描述 &ndash;&gt; B      A带箭头指向B并在中间加上文字描述</p>
+<p>A -. 描述 .-&gt; B      A用带箭头的虚线指向B并在中间加上文字描述</p>
+<p>A == 描述 ==&gt; B  A用加粗的箭头指向B并在中间加上文字描述</p>
+</li>
+</ul>
+<h2 id="流程图源码格式">流程图源码格式：</h2>
+<pre><code class="language-mermaid" data-lang="mermaid">graph TB
+
+A[方形] --&gt;B(圆角)
+
+  B --&gt; C{条件a}
+
+  C --&gt;|a=1| D[结果1]
+
+  C --&gt;|a=2| E[结果2]
+  E --&gt;G{1}
+  G --&gt;|B=1| H
+  G --&gt;|B=2| J
+
+  F[竖向流程图]
+</code></pre><h2 id="标准流程图源码格式横向">标准流程图源码格式（横向）：</h2>
+<pre><code class="language-flow" data-lang="flow">st=&gt;start: 开始框
+
+op=&gt;operation: 处理框
+
+cond=&gt;condition: 判断框(是或否?)
+
+sub1=&gt;subroutine: 子流程
+
+io=&gt;inputoutput: 输入输出框
+
+e=&gt;end: 结束框
+
+
+
+st(right)-&gt;op(right)-&gt;cond
+
+cond(yes)-&gt;io(bottom)-&gt;e
+
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre><pre><code class="language-mermaid" data-lang="mermaid">
+graph LR
+     id1(Start)--&gt;id2(Stop)
+     style id1 fill:#f9f,stroke:#333,stroke-width:4px;
+     style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray:5,5;
+
+</code></pre><h2 id="uml">uml</h2>
+<h3 id="uml时序图源码复杂样例">UML时序图源码复杂样例：</h3>
+<pre><code class="language-mermaid" data-lang="mermaid">
+sequenceDiagram
+　　participant John
+　　participant Alice
+　　　participant hebe
+　　Alice-&gt;&gt;John:Hello John,how are you?
+　　John--&gt;&gt;Alice:Great!
+     Alice-&gt;John: dont borther me ! 
+     John--&gt;Alice:Great! 
+     Alice-xJohn: wait! 
+     John--xAlice: Ok!
+
+</code></pre><pre><code class="language-sequence" data-lang="sequence">Title: 标题：复杂使用
+
+对象A-&gt;对象B: 对象B你好吗?（请求）
+
+Note right of 对象B: 对象B的描述
+
+Note left of 对象A: 对象A的描述(提示)
+
+对象B--&gt;对象A: 我很好(响应)
+
+Note over 对象A,小三:跨越两个Actor的便签
+
+对象B-&gt;小三: 你好吗
+
+小三--&gt;&gt;对象A: 对象B找我了
+
+对象A-&gt;对象B: 你真的好吗？
+
+Note over 小三,对象B: 我们是朋友
+
+participant C
+
+Note right of C: 没人陪我玩
+</code></pre><h3 id="uml标准时序图样例">UML标准时序图样例：</h3>
+<pre><code class="language-mermaid" data-lang="mermaid">%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头,-x,--x,
+
+ sequenceDiagram
+
+  participant 张三
+
+  participant 李四
+
+  张三-&gt;王五: 王五你好吗？
+
+  loop 健康检查
+
+  王五-&gt;&gt;李四: 与疾病战斗
+
+  end
+
+  Note right of 王五: 合理 食物 &lt;br/&gt;看医生...
+  
+  Note over 李四,王五:跨越两个Actor的便签
+  
+   王五-&gt;&gt;李四: Hello Bob, How are you?
+    alt is sick
+        李四-&gt;&gt;王五: not so good :(
+    else is well
+        李四-&gt;&gt;王五: Feeling fresh like a daisy :)
+    end
+    opt Extra response
+        李四-&gt;&gt;王五: Thanks for asking
+    end
+
+  李四--&gt;&gt;张三: 很好!
+
+  王五-&gt;李四: 你怎么样?
+
+  李四--&gt;王五: 很好!
+</code></pre><h2 id="gantt">gantt</h2>
+<h3 id="语法">语法</h3>
+<p>基本语法：</p>
+<ul>
+<li>使用 <code>mermaid</code> 解析语言，在开头使用关键字 <code>gantt</code> 指明</li>
+<li><code>deteFormat 格式</code> 指明日期的显示格式</li>
+<li><code>title 标题</code> 设置图标的标题</li>
+<li><code>section 描述</code> 定义纵向上的一个环节</li>
+<li>定义步骤：每个步骤有两种状态<code>done</code>（已完成）/<code>active</code>（执行中）
+<ul>
+<li><code>描述: 状态,id,开始日期,结束日期/持续时间</code></li>
+<li><code>描述: 状态[,id],after id2,持续时间</code></li>
+<li><code>crit</code> ：可用于标记该步骤需要被修正，将高亮显示</li>
+<li>如果不指定具体的开始时间或在某个步骤之后，将默认依次顺序排列</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-mermaid" data-lang="mermaid">gantt
+        dateFormat  YYYY-MM-DD
+        title 软件开发甘特图
+        section 设计
+        需求:done,des1, 2019-01-06,2019-01-08
+        原型:active,des2, 2019-01-09, 3d
+        UI设计:des3, after des2, 5d
+        未来任务:des4, after des3, 5d
+        section 开发
+        学习准备理解需求:crit, done, 2019-01-06,24h
+        设计框架:crit, done, after des2, 2d
+        开发:crit, active, 3d
+        未来任务:crit, 5d
+        休息时间:2d
+        section 测试
+        功能测试:active, a1, after des3, 3d
+        压力测试:after a1, 20h
+        测试报告: 48h
+</code></pre><pre><code class="language-mermaid" data-lang="mermaid">pie title Q3 2019 中国线上智能手机市场主要品牌市场份额
+&quot;华为&quot; : 26
+&quot;荣耀&quot; : 20
+&quot;小米&quot; : 14
+&quot;VIVO&quot; : 10
+&quot;Apple&quot; : 9
+&quot;OPPO&quot; : 5
+&quot;其他&quot; : 16
+</code></pre>
+        </div>
+
+        
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/markdown%E8%AF%AD%E6%B3%95%E6%95%B4%E7%90%86/"></a></li>
+        
+        <li><a href="/post/excel-vlookup/"></a></li>
+        
+        <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/search/">搜索</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            没有标签
+            
+        </div>
+    </article>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "your github repo"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                
+
+
+
+<div id="secondary">
+    <section class="widget">
+
+
+        <form id="search" action='https://beeky86.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://beeky86.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+
+
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://beeky86.github.io/post/cmd_tree/" title="cmd_tree">cmd_tree</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/" title="markdown_流程图绘制_sequence">markdown_流程图绘制_sequence</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/ftp/" title="ftp">ftp</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/" title="markdown_流程图绘制_flow">markdown_流程图绘制_flow</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/" title="远程唤醒电脑">远程唤醒电脑</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/" title="Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动">Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/" title="typorad下基于picgo-core的图床服务">typorad下基于picgo-core的图床服务</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/" title="快速获取excel工作簿中所有工作表的名称">快速获取excel工作簿中所有工作表的名称</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/FrontMatter/" title="FrontMatter">FrontMatter</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="Hugo - 安装、设置及使用">Hugo - 安装、设置及使用</a>
+    </li>
+    
+</ul>
+    </section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://beeky86.github.io/tags/FrontMatter/">FrontMatter </a>
+    
+    <a href="https://beeky86.github.io/tags/Realtek/">Realtek</a>
+    
+    <a href="https://beeky86.github.io/tags/bat/">bat</a>
+    
+    <a href="https://beeky86.github.io/tags/checkra1n_/">checkra1n_</a>
+    
+    <a href="https://beeky86.github.io/tags/chocolatey/">chocolatey</a>
+    
+    <a href="https://beeky86.github.io/tags/cmd/">cmd</a>
+    
+    <a href="https://beeky86.github.io/tags/eg/">eg</a>
+    
+    <a href="https://beeky86.github.io/tags/excel/">excel</a>
+    
+    <a href="https://beeky86.github.io/tags/flow/">flow</a>
+    
+    <a href="https://beeky86.github.io/tags/ftp/">ftp</a>
+    
+    <a href="https://beeky86.github.io/tags/github/">github</a>
+    
+    <a href="https://beeky86.github.io/tags/html/">html</a>
+    
+    <a href="https://beeky86.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://beeky86.github.io/tags/markdown/">markdown</a>
+    
+    <a href="https://beeky86.github.io/tags/mermaid/">mermaid</a>
+    
+    <a href="https://beeky86.github.io/tags/office/">office</a>
+    
+    <a href="https://beeky86.github.io/tags/pe/">pe</a>
+    
+    <a href="https://beeky86.github.io/tags/sequence/">sequence</a>
+    
+    <a href="https://beeky86.github.io/tags/sync/">sync</a>
+    
+    <a href="https://beeky86.github.io/tags/themes/">themes</a>
+    
+    <a href="https://beeky86.github.io/tags/tree/">tree</a>
+    
+    <a href="https://beeky86.github.io/tags/uac/">uac</a>
+    
+    <a href="https://beeky86.github.io/tags/ubuntu/">ubuntu</a>
+    
+    <a href="https://beeky86.github.io/tags/wifi/">wifi</a>
+    
+    <a href="https://beeky86.github.io/tags/wmic/">wmic</a>
+    
+    <a href="https://beeky86.github.io/tags/wol/">wol</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/">局域网</a>
+    
+    <a href="https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/">整理</a>
+    
+    <a href="https://beeky86.github.io/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+    
+    <a href="https://beeky86.github.io/tags/%E9%AC%BC%E5%90%B9%E7%81%AF/">鬼吹灯</a>
+    
+</div>
+    </section>
+
+
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://beeky86.github.io/categories/excel/">excel (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/hugo/">hugo (26)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/office/">office (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/windows/">windows (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E5%A8%B1%E4%B9%90/">娱乐 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B/">教程 (28)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/">文件目录 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图 (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E9%A9%B1%E5%8A%A8/">驱动 (1)</a></li>
+    
+</ul>
+    </section>
+
+
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">博主站点</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://live.bilibili.com/22180527" title="快来B站看beeky86的直播啦" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/ypmXLvGosaxbAul.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.douban.com/people/58285853/" title="博主的豆瓣" target="_blank" style="color:red">
+                
+                    <img src="https://img3.doubanio.com/dae/accounts/resources/1f8d15e/sns/assets/lg_main@2x.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.guokr.com/" title="果壳" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/HgTXherR9o73aAE.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://music.163.com/" title="网易云音乐" target="_blank" style="color:red">
+                
+                    <img src="https://static.xmt.cn/6c82dbabf8524074aaf2b6fd5ca05c7f.png">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://music.163.com/" title="网易云音乐">网易云音乐</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://map.baidu.com" title="百度地图">百度地图</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://beeky86.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://beeky86.github.io">找个时间 By wakaka</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+
+  
+  <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+  <script>
+        mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+
+</html>

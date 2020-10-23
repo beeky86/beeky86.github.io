@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="zh-CN">
+
+
+<head>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>找个时间</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  
+    
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="270" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="/assets/waifu-tips.js"></script>
+    <script src="/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("/assets/")</script>
+</body>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>ftp | 找个时间</title>
+    <meta property="og:title" content="ftp - 找个时间">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2020-09-17T00:00:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-09-17T00:00:00&#43;08:00'>
+        
+    <meta name="Keywords" content="hugo,markdown">
+    <meta name="description" content="ftp">
+        
+    <meta name="author" content="wakaka">
+    <meta property="og:url" content="https://beeky86.github.io/post/ftp/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-4031353640611810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://beeky86.github.io">
+                        找个时间
+                    </a>
+                
+                <p class="description">个人知识分享平台</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://beeky86.github.io">首页</a>
+                    
+                    <a  href="https://beeky86.github.io/mermaid/" title="mermaid测试">mermaid测试</a>
+                    
+                    <a  href="https://beeky86.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://beeky86.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 250px;
+        margin-left: -260px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-登录ftp服务器"><strong>1. 登录FTP服务器</strong></a></li>
+    <li><a href="#2-查看ftp服务器上的文件"><strong>2. 查看FTP服务器上的文件</strong></a></li>
+    <li><a href="#3-下载文件"><strong>3. 下载文件</strong></a></li>
+    <li><a href="#4-上传文件"><strong>4. 上传文件</strong></a></li>
+    <li><a href="#5-结束并退出ftp"><strong>5. 结束并退出FTP</strong></a></li>
+    <li><a href="#6-附表">6. 附表</a></li>
+    <li><a href="#ftp脚本">ftp脚本</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">ftp</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年9月17日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B'>教程</a></span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/hugo'>hugo</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h2 id="1-登录ftp服务器"><strong>1. 登录FTP服务器</strong></h2>
+<ol>
+<li>
+<p>ftp [hostname] [ip-address]</p>
+<pre><code>ftp 192.168.10.xxx`
+</code></pre></li>
+<li>
+<p>直接输入<code>ftp</code>，进入<code>ftp</code>服务后</p>
+<pre><code>open 192.168.10.xxx
+</code></pre></li>
+</ol>
+<blockquote>
+<p>当连接成功后会让你进行身份验证，在输入密码时屏幕上没有任何显示，不用管，直接输完密码敲回车键即可。</p>
+</blockquote>
+<h2 id="2-查看ftp服务器上的文件"><strong>2. 查看FTP服务器上的文件</strong></h2>
+<blockquote>
+<p>（一般情况下用户都会被限制目录的访问权限，只可在当前目录下进行操作）</p>
+</blockquote>
+<ul>
+<li><code>dir</code>：显示服务器目录和文件列表</li>
+<li><code>ls</code>：显示服务器简易的文件列表</li>
+<li><code>cd</code>：进入服务器指定的目录</li>
+</ul>
+<blockquote>
+<p><code>dir</code>命令可以使用通配符“”和“?”，比如，显示当前目录中所有扩展名为jpg的文件，可使用命令 dir .jpg。</p>
+<p><code>cd</code>命令中必须带目录名。比如 <code>cd main</code> 表示进入当前目录下的main子目录</p>
+</blockquote>
+<h2 id="3-下载文件"><strong>3. 下载文件</strong></h2>
+<blockquote>
+<p>上传和下载文件时应该使用正确的传输类型</p>
+<p>FTP的传输类型分为ASCII码方式和二进制方式两种</p>
+<blockquote>
+<p>对.txt、.htm等文件应采用ASCII码方式传输</p>
+<p>对.exe或图片、视频、音频等文件应采用二进制方式传输</p>
+</blockquote>
+<blockquote>
+<p>在默认情况下，FTP为ASCII码传输方式。</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>
+<p><code>type</code>：查看当前的传输方式</p>
+</li>
+<li>
+<p><code>ascii</code>：设定传输方式为ASCII码方式</p>
+</li>
+<li>
+<p><code>binary</code>：设定传输方式为二进制方式</p>
+<blockquote>
+<p>（以上命令都不带参数）</p>
+</blockquote>
+</li>
+<li>
+<p><code>get</code>：下载指定文件<code>get filename [newname]</code></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">  get /usr/your/1.htm 1.htm
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>(filename为下载的FTP服务器上的文件名，newname为保存在本都计算机上时使用的名字，如果不指定newname，文件将以原名保存。</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><code>get</code>命令下载的文件将保存在本地计算机的工作目录下。该目录是启动FTP时在盘符C:后显示的目录。如果想修改本地计算机的工作目录，可以使用 lcd 命令。比如：lcd d:\ 表示将工作目录设定为D盘的根目录。</p>
+</blockquote>
+<ul>
+<li>
+<p><code>mget</code>：下载多个文件<code>mget filename [filename ....]</code></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#0086b3">cd </span>/usr/your/
+mget*.*
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>（<code>mget</code>命令支持通配符“<em>”和“?”，比如：mget</em> .mp3 表示下载FTP服务器当前目录下的所有扩展名为mp3的文件。）</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="4-上传文件"><strong>4. 上传文件</strong></h2>
+<ul>
+<li>
+<p><code>put</code>：上传指定文件<code>put filename [newname]</code></p>
+</li>
+<li>
+<p><code>send</code>：上传指定文件<code>send filename [newname]</code></p>
+<blockquote>
+<p>（filename为上传的本地文件名，newname为上传至FTP服务器上时使用的名字，如果不指定newname，文件将以原名上传。）</p>
+<p>上传文件前，应该根据文件的类型设置传输方式，本机的工作目录也应该设置为上传文件所在的目录。</p>
+<p>这里的send和put方法用法都基本相同，但是上传速度send却要比put快很多，有兴趣的人可以去研究下。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="5-结束并退出ftp"><strong>5. 结束并退出FTP</strong></h2>
+<ul>
+<li><code>close</code>：结束与服务器的FTP会话</li>
+<li><code>quit</code>：结束与服务器的FTP会话并退出FTP环境</li>
+</ul>
+<h2 id="6-附表">6. 附表</h2>
+<table>
+<thead>
+<tr>
+<th>ascii</th>
+<th>为文本文件设置传输方式为ascii</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bell</td>
+<td>命令完成时响铃</td>
+</tr>
+<tr>
+<td>binary</td>
+<td>设置传输方式为二进制，这是缺省设置</td>
+</tr>
+<tr>
+<td>bye</td>
+<td>终止ftp会话，并退出</td>
+</tr>
+<tr>
+<td>cd <em>dir_name</em></td>
+<td>切换远程主机上目录</td>
+</tr>
+<tr>
+<td>cdup</td>
+<td>切换远程主机上目录至上一级目录</td>
+</tr>
+<tr>
+<td>close</td>
+<td>终止到远程主机的ftp会话</td>
+</tr>
+<tr>
+<td>delete <em>file_name</em></td>
+<td>删除远程主机中的文件</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>显示远程主机上目录列表</td>
+</tr>
+<tr>
+<td>get <em>file_name</em></td>
+<td>下载一个文件</td>
+</tr>
+<tr>
+<td>hash</td>
+<td>每传输一定数量数据打印`#&rsquo;                     |</td>
+</tr>
+<tr>
+<td>lcd <em>dir_name</em></td>
+<td>切换本地工作目录</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>列表远程主机目录中的信息</td>
+</tr>
+<tr>
+<td>mdelete <em>file_names</em></td>
+<td>删除多个文件</td>
+</tr>
+<tr>
+<td>mget <em>file_names</em></td>
+<td>下载多个文件</td>
+</tr>
+<tr>
+<td>mkdir <em>dir_name</em></td>
+<td>在远程主机上创建目录</td>
+</tr>
+<tr>
+<td>mput <em>file_names</em></td>
+<td>上传多个文件</td>
+</tr>
+<tr>
+<td>open <em>site_name</em></td>
+<td>连接到远程tftp</td>
+</tr>
+<tr>
+<td>prompt</td>
+<td>设置多个文件传输时的交互提示</td>
+</tr>
+<tr>
+<td>put <em>file_name</em></td>
+<td>上传一个文件</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>显示远程主机当前工作目录</td>
+</tr>
+<tr>
+<td>quit</td>
+<td>终止ftp会话并退出</td>
+</tr>
+<tr>
+<td>rename <em>old_name new_name</em></td>
+<td>重命名文件</td>
+</tr>
+<tr>
+<td>rmdir <em>dir_name</em></td>
+<td>删除远程主机上的某个目录</td>
+</tr>
+<tr>
+<td>size <em>file_name</em></td>
+<td>显示远程主机上某个文件的大小</td>
+</tr>
+<tr>
+<td>status</td>
+<td>显示当前状态</td>
+</tr>
+<tr>
+<td>system</td>
+<td>显示远程主机操作系统类型</td>
+</tr>
+<tr>
+<td>tenex</td>
+<td>将文件传输类型设置为tenex机所需的类型</td>
+</tr>
+<tr>
+<td>user</td>
+<td>向远程主机发送用户信息(登录信息)</td>
+</tr>
+<tr>
+<td>verbose</td>
+<td>开关verbose方式，远程主机所有响应都显示给客户</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ftp脚本">ftp脚本</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">rem 这玩意儿只能下在文件<span style="color:#a61717;background-color:#e3d2d2">，</span>不能下文件夹
+<span style="color:#008080">@echo</span> off
+rem 指定FTP用户名
+<span style="color:#0086b3">set </span>ftpUser=
+rem 指定FTP密码
+<span style="color:#0086b3">set </span>ftpPass=
+rem 指定FTP服务器地址
+<span style="color:#0086b3">set </span>ftpIP=
+rem 指定待下载的文件位于FTP服务器的哪个目录
+<span style="color:#0086b3">set </span>ftpFolder=/320/
+rem 指定从FTP下载下来的文件存放到本机哪个目录
+<span style="color:#0086b3">set </span>LocalFolder=D:/test
+<span style="color:#0086b3">set </span>ftpFile=<span style="color:#000;font-weight:bold">%</span>temp%/TempFTP.txt
+&gt;<span style="color:#d14">&#34;%ftpFile%&#34;</span> (
+echo,<span style="color:#000;font-weight:bold">%</span>ftpUser%
+echo,<span style="color:#000;font-weight:bold">%</span>ftpPass%
+<span style="color:#0086b3">echo cd </span><span style="color:#d14">&#34;%ftpFolder%&#34;</span>
+<span style="color:#0086b3">echo </span>lcd <span style="color:#d14">&#34;%LocalFolder%&#34;</span>
+<span style="color:#0086b3">echo </span>bin
+<span style="color:#0086b3">echo </span>mget *.*
+<span style="color:#0086b3">echo </span>bye
+)
+<span style="color:#0086b3">start </span>ftp -v -i -s<span style="color:#a61717;background-color:#e3d2d2">:</span><span style="color:#d14">&#34;%ftpFile%&#34;</span> <span style="color:#000;font-weight:bold">%</span>ftpIP%
+pause
+</code></pre></td></tr></table>
+</div>
+</div>
+        </div>
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://beeky86.github.io">wakaka</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://beeky86.github.io/post/ftp/">https://beeky86.github.io/post/ftp/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/wmic-%E6%94%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8D/">wmic-改计算机名</a></li>
+        
+        <li><a href="/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/">markdown_流程图绘制_flow</a></li>
+        
+        <li><a href="/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/">远程唤醒电脑</a></li>
+        
+        <li><a href="/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/">Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</a></li>
+        
+        <li><a href="/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/">typorad下基于picgo-core的图床服务</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://beeky86.github.io/tags/cmd'>cmd</a></li>
+                
+                <li><a href='https://beeky86.github.io/tags/ftp'>ftp</a></li>
+                
+                <li><a href='https://beeky86.github.io/tags/sync'>sync</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "your github repo"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                
+
+
+
+<div id="secondary">
+    <section class="widget">
+
+
+        <form id="search" action='https://beeky86.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://beeky86.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+
+
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://beeky86.github.io/post/cmd_tree/" title="cmd_tree">cmd_tree</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/" title="markdown_流程图绘制_sequence">markdown_流程图绘制_sequence</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/ftp/" title="ftp">ftp</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/" title="markdown_流程图绘制_flow">markdown_流程图绘制_flow</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/" title="远程唤醒电脑">远程唤醒电脑</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/" title="Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动">Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/" title="typorad下基于picgo-core的图床服务">typorad下基于picgo-core的图床服务</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/" title="快速获取excel工作簿中所有工作表的名称">快速获取excel工作簿中所有工作表的名称</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/FrontMatter/" title="FrontMatter">FrontMatter</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="Hugo - 安装、设置及使用">Hugo - 安装、设置及使用</a>
+    </li>
+    
+</ul>
+    </section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://beeky86.github.io/tags/FrontMatter/">FrontMatter </a>
+    
+    <a href="https://beeky86.github.io/tags/Realtek/">Realtek</a>
+    
+    <a href="https://beeky86.github.io/tags/bat/">bat</a>
+    
+    <a href="https://beeky86.github.io/tags/checkra1n_/">checkra1n_</a>
+    
+    <a href="https://beeky86.github.io/tags/chocolatey/">chocolatey</a>
+    
+    <a href="https://beeky86.github.io/tags/cmd/">cmd</a>
+    
+    <a href="https://beeky86.github.io/tags/eg/">eg</a>
+    
+    <a href="https://beeky86.github.io/tags/excel/">excel</a>
+    
+    <a href="https://beeky86.github.io/tags/flow/">flow</a>
+    
+    <a href="https://beeky86.github.io/tags/ftp/">ftp</a>
+    
+    <a href="https://beeky86.github.io/tags/github/">github</a>
+    
+    <a href="https://beeky86.github.io/tags/html/">html</a>
+    
+    <a href="https://beeky86.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://beeky86.github.io/tags/markdown/">markdown</a>
+    
+    <a href="https://beeky86.github.io/tags/mermaid/">mermaid</a>
+    
+    <a href="https://beeky86.github.io/tags/office/">office</a>
+    
+    <a href="https://beeky86.github.io/tags/pe/">pe</a>
+    
+    <a href="https://beeky86.github.io/tags/sequence/">sequence</a>
+    
+    <a href="https://beeky86.github.io/tags/sync/">sync</a>
+    
+    <a href="https://beeky86.github.io/tags/themes/">themes</a>
+    
+    <a href="https://beeky86.github.io/tags/tree/">tree</a>
+    
+    <a href="https://beeky86.github.io/tags/uac/">uac</a>
+    
+    <a href="https://beeky86.github.io/tags/ubuntu/">ubuntu</a>
+    
+    <a href="https://beeky86.github.io/tags/wifi/">wifi</a>
+    
+    <a href="https://beeky86.github.io/tags/wmic/">wmic</a>
+    
+    <a href="https://beeky86.github.io/tags/wol/">wol</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/">局域网</a>
+    
+    <a href="https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/">整理</a>
+    
+    <a href="https://beeky86.github.io/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+    
+    <a href="https://beeky86.github.io/tags/%E9%AC%BC%E5%90%B9%E7%81%AF/">鬼吹灯</a>
+    
+</div>
+    </section>
+
+
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://beeky86.github.io/categories/excel/">excel (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/hugo/">hugo (26)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/office/">office (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/windows/">windows (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E5%A8%B1%E4%B9%90/">娱乐 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B/">教程 (28)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/">文件目录 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图 (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E9%A9%B1%E5%8A%A8/">驱动 (1)</a></li>
+    
+</ul>
+    </section>
+
+
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">博主站点</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://live.bilibili.com/22180527" title="快来B站看beeky86的直播啦" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/ypmXLvGosaxbAul.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.douban.com/people/58285853/" title="博主的豆瓣" target="_blank" style="color:red">
+                
+                    <img src="https://img3.doubanio.com/dae/accounts/resources/1f8d15e/sns/assets/lg_main@2x.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.guokr.com/" title="果壳" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/HgTXherR9o73aAE.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://music.163.com/" title="网易云音乐" target="_blank" style="color:red">
+                
+                    <img src="https://static.xmt.cn/6c82dbabf8524074aaf2b6fd5ca05c7f.png">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://music.163.com/" title="网易云音乐">网易云音乐</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://map.baidu.com" title="百度地图">百度地图</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://beeky86.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://beeky86.github.io">找个时间 By wakaka</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+
+  
+  <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+  <script>
+        mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+
+</html>

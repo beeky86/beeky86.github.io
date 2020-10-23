@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="zh-CN">
+
+
+<head>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>找个时间</title>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  
+    
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="270" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="/assets/waifu-tips.js"></script>
+    <script src="/assets/live2d.js"></script>
+    <script type="text/javascript">initModel("/assets/")</script>
+</body>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>文件命名规范 | 找个时间</title>
+    <meta property="og:title" content="文件命名规范 - 找个时间">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2020-04-02T00:00:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2020-04-02T00:00:00&#43;08:00'>
+        
+    <meta name="Keywords" content="hugo,markdown">
+    <meta name="description" content="文件命名规范">
+        
+    <meta name="author" content="wakaka">
+    <meta property="og:url" content="https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script data-ad-client="ca-pub-4031353640611810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    
+    
+    
+    
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://beeky86.github.io">
+                        找个时间
+                    </a>
+                
+                <p class="description">个人知识分享平台</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://beeky86.github.io">首页</a>
+                    
+                    <a  href="https://beeky86.github.io/mermaid/" title="mermaid测试">mermaid测试</a>
+                    
+                    <a  href="https://beeky86.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://beeky86.github.io/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 250px;
+        margin-left: -260px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 0px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 50%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0-无序根源"><strong>0. 无序根源</strong></a></li>
+    <li><a href="#1-定位文件结构框架及命名规范"><strong>1. 定位——文件结构框架及命名规范</strong></a></li>
+    <li><a href="#3-升级及时更新"><strong>3. 升级——及时更新</strong></a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">文件命名规范</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年4月2日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B'>教程</a></span>
+            
+            <span class="meta-category"><a href='https://beeky86.github.io/categories/hugo'>hugo</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="post-content">
+            <h1 id="一次整理终生轻松的文件整理术">一次整理终生轻松的文件整理术</h1>
+<h2 id="0-无序根源"><strong>0. 无序根源</strong></h2>
+<p>你是否每次打开电脑，桌面都一片文件，聪明的你，竟然每次都能一眼找到昨天的那个文件，不过你也经常有失误的时候，比如说，老板突然跟你要……</p>
+<p>你说，我桌面非常整洁，那是因为你经常聪明地建立一个名叫「待整理」的文件夹，这个神奇的文件夹竟然能装下所有的混乱，你一下子就清净了，但，你知道那里却隐藏着大大的不安。</p>
+<p>PKU= 定位（Position）+ 保持（Keep）+ 升级（Upgrade）</p>
+<blockquote>
+<p>「定位」根据使用场景及工作流程重新<strong>定位</strong>文件结构及使用规范；
+「保持」通过习惯保持文件整洁；
+「升级」定期优化工作流，更新规范。</p>
+</blockquote>
+<blockquote>
+<p>一个应用解决一个典型场景问题；
+信息数据在应用内部自动归档；
+应用内部以不同的视图满足用户多方面的场景查看需求；
+这应该是终结的信息组织方式，
+就是不用整理的整理。</p>
+</blockquote>
+<p>当然笔记类应用的出现，应该让很多人摆脱了整理word文件的烦恼，文件统一存放入口得以解决。但当然，笔记应用内部也是需要管理的。</p>
+<p>也有公司开始引入了一些不错的团队管理工具，这些方便团队共享资料的工具，将<strong>文件之间通过链接关联</strong>，很大程度上解决了文件的组织问题。</p>
+<p>但对于目前绝大多数工作，单独形式的文件依旧存在，文件夹和文件的这种信息组织形式，对于工作文档暂时还是必不可少的。但是这种形式因为过分自由，如果没有合理的规范，日积月累就会混乱。</p>
+<h2 id="1-定位文件结构框架及命名规范"><strong>1. 定位——文件结构框架及命名规范</strong></h2>
+<p><strong>1.1 根据场景定义文件结构框架</strong></p>
+<p>日常用电脑进行的工作场景大分类：工作（Work）、个人（Personal）、生活（Life）。</p>
+<p><strong>1.2 命名规范</strong></p>
+<p>
+        <img class="mx-auto" alt="img" src="%e6%96%87%e4%bb%b6%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.assets/v2-881c7a93a4b22924d36ea7bb2f723f22_720w.jpg" />   
+    </p>
+<p><strong>1.2.1 文件命名规范</strong></p>
+<p>文件命名结构：<code>序号_项目名称_文件名_版本号_日期.文件后缀</code></p>
+<p>例如：<code>1_XXXX项目_产品规划_V1.0_20171126.PDF</code></p>
+<p>文件名由如下部分组成：</p>
+<ul>
+<li>
+<p>序号：同一个目录下有多个文件时为了固化显示顺序加一个数字序号</p>
+</li>
+<li>
+<p>项目名称</p>
+</li>
+<li>
+<p>按项目统一的立项名称</p>
+</li>
+<li>
+<p>文件名</p>
+<blockquote>
+<p>规范的项目流程，可统一阶段输出物名称</p>
+</blockquote>
+<ul>
+<li>可以重新梳理一下现有项目流程，并规范每个节点的输出物名称</li>
+</ul>
+</li>
+<li>
+<p>文件版本</p>
+<ul>
+<li>主版本号.辅版本号
+<ul>
+<li>正式评审阶段一个较完整的版本可命名为1.0</li>
+<li>在之前的版本0.N</li>
+<li>评审结束后，更改，辅版本号+1</li>
+<li>如果同一文档多人编辑，在最后加入名或缩写；</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>时间戳</p>
+<ul>
+<li>YMD</li>
+</ul>
+</li>
+<li>
+<p>文件后缀</p>
+</li>
+</ul>
+<p><strong>1.2.1 文件夹命名规范</strong></p>
+<p>文件夹命名结构：<code>序号_文件夹名称_开始日期_结束日期</code></p>
+<p>例如：<code>1_XXXX项目_20160211_20161111</code></p>
+<p>文件夹由四部分组成：</p>
+<ul>
+<li>序号：为了固化显示顺序加一个数字序号</li>
+<li>文件夹名称：项目名称</li>
+<li>开始时间：项目的开始日期</li>
+<li>结束时间：项目的结束日期
+<ul>
+<li>根据项目阶段的不同级别，开始时间和结束时间可随机调整，不必每个文件夹都注明。</li>
+</ul>
+</li>
+</ul>
+<p><strong>1.3 核心文件名定义方法：根据工作流程定义项目文件结构&amp;名称</strong></p>
+<blockquote>
+<p>对自己工作流程不够清晰</p>
+</blockquote>
+<p>一个标准规范的项目流程应该有明确的项目阶段及项目输出物，我们可以根据项目过程规范我们的文件结构：</p>
+<p>
+        <img class="mx-auto" alt="img" src="%e6%96%87%e4%bb%b6%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.assets/v2-c9dd4f295cfdd6ebe13a3226f7f833d2_720w.jpg" />   
+    </p>
+<blockquote>
+<p>工作流与文件名的关系
+按照项目种类确定工作流；
+通用的项目，按照工作流确定每个流程节点的名称，按此定义文件目录结构及名称；</p>
+</blockquote>
+<p>
+        <img class="mx-auto" alt="img" src="%e6%96%87%e4%bb%b6%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.assets/v2-c06d0e910f5b330cc13b45e7574bcc47_720w.jpg" />   
+    </p>
+<blockquote>
+<p>原则：
+对于流程较复杂的项目，例如下图，子项目阶段、子项目步骤，文件夹中开始时间和结束时间可根据情况来定，不必全部填写，但整体的大项目和重要阶段最好补充清楚。
+文件夹尽量保持扁平，一般项目2级目录最好。</p>
+</blockquote>
+<p>
+        <img class="mx-auto" alt="img" src="%e6%96%87%e4%bb%b6%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.assets/v2-285d79cbc7123d2a1a183f7bde976bb1_720w.jpg" />   
+    </p>
+<p><strong>2. 保持——习惯</strong></p>
+<p>
+        <img class="mx-auto" alt="img" src="%e6%96%87%e4%bb%b6%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.assets/v2-a2cd1189eeabca31b2797f1f8f6dec32_720w.jpg" />   
+    </p>
+<h2 id="3-升级及时更新"><strong>3. 升级——及时更新</strong></h2>
+<p>以上规范，只是个人现阶段的一个方法，根据不同公司不同的项目流程，文件目录需要及时调整，但是大原则基本上是固定的。注意更新自己的文件管理规范。<strong>行动建议</strong></p>
+<p>如果文章开头描述的就是你，那你可能需要先花一段时间集中梳理，但是不要着急：</p>
+<blockquote>
+<p>**1. 执行初期：**可将命名规范、习惯卡片打印出来贴至工作台前，提醒自己时刻按此规则整理文件；
+**2. 每天整理10分钟：**整理文件是个大工程，在初期，可先从个人、最近的工作开始着手，每天抽出10分钟。
+<strong>3. 保持</strong>：一旦大功告成，后面的人生将无比轻松，无需整理，要坚持。</p>
+</blockquote>
+
+        </div>
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://beeky86.github.io">wakaka</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">https://beeky86.github.io/post/%E6%96%87%E4%BB%B6%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/chocolatey/">chocolatey</a></li>
+        
+        <li><a href="/post/eg/">eg</a></li>
+        
+        <li><a href="/post/excel%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%A9%BA%E7%99%BD%E5%80%BC%E5%8E%BB%E9%99%A4/">excel下拉菜单空白值去除</a></li>
+        
+        <li><a href="/post/html%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC/">html链接跳转</a></li>
+        
+        <li><a href="/post/hugo-github/">hugo-github</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://beeky86.github.io/tags/hugo'>hugo</a></li>
+                
+                <li><a href='https://beeky86.github.io/tags/%E6%95%B4%E7%90%86'>整理</a></li>
+                
+                <li><a href='https://beeky86.github.io/tags/markdown'>markdown</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "your github repo"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                </div>
+
+                
+
+
+
+<div id="secondary">
+    <section class="widget">
+
+
+        <form id="search" action='https://beeky86.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://beeky86.github.io">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+
+
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://beeky86.github.io/post/cmd_tree/" title="cmd_tree">cmd_tree</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_sequence/" title="markdown_流程图绘制_sequence">markdown_流程图绘制_sequence</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/ftp/" title="ftp">ftp</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/" title="markdown_流程图绘制_flow">markdown_流程图绘制_flow</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E8%BF%9C%E7%A8%8B%E5%94%A4%E9%86%92%E7%94%B5%E8%84%91/" title="远程唤醒电脑">远程唤醒电脑</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/" title="Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动">Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/typorad%E4%B8%8B%E5%9F%BA%E4%BA%8Epicgo-core%E7%9A%84%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1/" title="typorad下基于picgo-core的图床服务">typorad下基于picgo-core的图床服务</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96excel%E5%B7%A5%E4%BD%9C%E7%B0%BF%E4%B8%AD%E6%89%80%E6%9C%89%E5%B7%A5%E4%BD%9C%E8%A1%A8%E7%9A%84%E5%90%8D%E7%A7%B0/" title="快速获取excel工作簿中所有工作表的名称">快速获取excel工作簿中所有工作表的名称</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/FrontMatter/" title="FrontMatter">FrontMatter</a>
+    </li>
+    
+    <li>
+        <a href="https://beeky86.github.io/post/Hugo-%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="Hugo - 安装、设置及使用">Hugo - 安装、设置及使用</a>
+    </li>
+    
+</ul>
+    </section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://beeky86.github.io/tags/FrontMatter/">FrontMatter </a>
+    
+    <a href="https://beeky86.github.io/tags/Realtek/">Realtek</a>
+    
+    <a href="https://beeky86.github.io/tags/bat/">bat</a>
+    
+    <a href="https://beeky86.github.io/tags/checkra1n_/">checkra1n_</a>
+    
+    <a href="https://beeky86.github.io/tags/chocolatey/">chocolatey</a>
+    
+    <a href="https://beeky86.github.io/tags/cmd/">cmd</a>
+    
+    <a href="https://beeky86.github.io/tags/eg/">eg</a>
+    
+    <a href="https://beeky86.github.io/tags/excel/">excel</a>
+    
+    <a href="https://beeky86.github.io/tags/flow/">flow</a>
+    
+    <a href="https://beeky86.github.io/tags/ftp/">ftp</a>
+    
+    <a href="https://beeky86.github.io/tags/github/">github</a>
+    
+    <a href="https://beeky86.github.io/tags/html/">html</a>
+    
+    <a href="https://beeky86.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://beeky86.github.io/tags/markdown/">markdown</a>
+    
+    <a href="https://beeky86.github.io/tags/mermaid/">mermaid</a>
+    
+    <a href="https://beeky86.github.io/tags/office/">office</a>
+    
+    <a href="https://beeky86.github.io/tags/pe/">pe</a>
+    
+    <a href="https://beeky86.github.io/tags/sequence/">sequence</a>
+    
+    <a href="https://beeky86.github.io/tags/sync/">sync</a>
+    
+    <a href="https://beeky86.github.io/tags/themes/">themes</a>
+    
+    <a href="https://beeky86.github.io/tags/tree/">tree</a>
+    
+    <a href="https://beeky86.github.io/tags/uac/">uac</a>
+    
+    <a href="https://beeky86.github.io/tags/ubuntu/">ubuntu</a>
+    
+    <a href="https://beeky86.github.io/tags/wifi/">wifi</a>
+    
+    <a href="https://beeky86.github.io/tags/wmic/">wmic</a>
+    
+    <a href="https://beeky86.github.io/tags/wol/">wol</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/">小工具</a>
+    
+    <a href="https://beeky86.github.io/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/">局域网</a>
+    
+    <a href="https://beeky86.github.io/tags/%E6%95%B4%E7%90%86/">整理</a>
+    
+    <a href="https://beeky86.github.io/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+    
+    <a href="https://beeky86.github.io/tags/%E9%AC%BC%E5%90%B9%E7%81%AF/">鬼吹灯</a>
+    
+</div>
+    </section>
+
+
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://beeky86.github.io/categories/excel/">excel (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/hugo/">hugo (26)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/office/">office (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/windows/">windows (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E5%A8%B1%E4%B9%90/">娱乐 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%95%99%E7%A8%8B/">教程 (28)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/">文件目录 (1)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/">流程图 (2)</a></li>
+    
+    <li><a href="https://beeky86.github.io/categories/%E9%A9%B1%E5%8A%A8/">驱动 (1)</a></li>
+    
+</ul>
+    </section>
+
+
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">博主站点</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://live.bilibili.com/22180527" title="快来B站看beeky86的直播啦" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/ypmXLvGosaxbAul.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.douban.com/people/58285853/" title="博主的豆瓣" target="_blank" style="color:red">
+                
+                    <img src="https://img3.doubanio.com/dae/accounts/resources/1f8d15e/sns/assets/lg_main@2x.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://www.guokr.com/" title="果壳" target="_blank" style="color:red">
+                
+                    <img src="https://i.loli.net/2020/06/08/HgTXherR9o73aAE.png">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://music.163.com/" title="网易云音乐" target="_blank" style="color:red">
+                
+                    <img src="https://static.xmt.cn/6c82dbabf8524074aaf2b6fd5ca05c7f.png">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://music.163.com/" title="网易云音乐">网易云音乐</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://map.baidu.com" title="百度地图">百度地图</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://beeky86.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://beeky86.github.io">找个时间 By wakaka</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+
+
+  
+  <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
+  <script>
+        mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+
+</html>

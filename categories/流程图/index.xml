@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>流程图 on 找个时间</title>
+    <link>https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/</link>
+    <description>Recent content in 流程图 on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/categories/%E6%B5%81%E7%A8%8B%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>markdown_流程图绘制_flow</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_flow/</guid>
+      <description>flow 概述 流程图的语法大致分为两部分。 定义元素 连接元素 定义元素 语法概览 tag=&amp;gt;type: content:&amp;gt;url 语法解释 tag：标签，用于连接元素时使用 type：该标签的类型。共有6种类型如下： 标签类型 解释 start 开始节点 end 结束节点 operation 操作节点 subroutine 子程序节点 condition 条件节点 inputoutput 输入或产出节点 content：流程语句中放置的内容 conten</description>
+    </item>
+    
+    <item>
+      <title>markdown_流程图绘制_mermaid</title>
+      <link>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/markdown_%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6_mermaid/</guid>
+      <description>mermaid gantt gantt title 甘特图示例一 section 迭代一 任务一 :a1, 2014-01-01, 30d 任务二 :after a1 , 20d section 迭代二 任务三 :2014-01-12 , 12d 任务四 : 24d</description>
+    </item>
+    
+  </channel>
+</rss>

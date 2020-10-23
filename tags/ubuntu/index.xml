@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on 找个时间</title>
+    <link>https://beeky86.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi驱动</title>
+      <link>https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/Ubuntu-18.04_Realtek-RTL8821CE_Wi-Fi%E9%A9%B1%E5%8A%A8/</guid>
+      <description>为Realtek RTL8821CE在在Ubuntu 18.04上安装Wi-Fi驱动程序 禁用了secure boot(你需要在该命令后重新启动，并在蓝色屏幕上输入密码字符)： sudo mokutil --disable-validation sudo apt-get install --reinstall git dkms build-essential linux-headers-$(uname -r) git clone https://github.com/tomaspinho/rtl8821ce cd rtl8821ce chmod +x dkms-install.sh chmod +x dkms-remove.sh sudo ./dkms-install.sh</description>
+    </item>
+    
+    <item>
+      <title>ubuntu_checkra1n_越狱</title>
+      <link>https://beeky86.github.io/post/ubuntu_checkra1n_%E8%B6%8A%E7%8B%B1/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/ubuntu_checkra1n_%E8%B6%8A%E7%8B%B1/</guid>
+      <description>1 2 3 4 5 6 #install checkra1n echo &amp;#34;deb https://assets.checkra.in/debian /&amp;#34; | sudo tee -a /etc/apt/sources.list sudo apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key sudo apt update sudo apt upgrade sudo apt install checkra1n</description>
+    </item>
+    
+  </channel>
+</rss>

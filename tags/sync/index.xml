@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sync on 找个时间</title>
+    <link>https://beeky86.github.io/tags/sync/</link>
+    <description>Recent content in sync on 找个时间</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://beeky86.github.io/tags/sync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ftp</title>
+      <link>https://beeky86.github.io/post/ftp/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://beeky86.github.io/post/ftp/</guid>
+      <description>1. 登录FTP服务器 ftp [hostname] [ip-address] ftp 192.168.10.xxx` 直接输入ftp，进入ftp服务后 open 192.168.10.xxx 当连接成功后会让你进行身份验证，在输入密码时屏幕上没有任何显示，不用管，直接输完密码敲回车键即可。 2. 查看FTP服务器上的文件 （一般情况下用户都会被限制目录的访问权限，只可在当前目录下进行操作） dir：显示服务器目录和</description>
+    </item>
+    
+  </channel>
+</rss>
